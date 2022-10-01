@@ -30,7 +30,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          ToneJS Project — Initiation
+          ToneJS Project
         </p>
         <div className="pianoPage">
           <h1 className="mb-2">Piano</h1>
@@ -48,10 +48,11 @@ function App() {
             <div className="black-key" onClick={playBb4}><span>U</span></div>
             <div className="white-key" onClick={playB4}><span>J</span></div>
             <div className="white-key" onClick={playC5}><span>K</span></div>
-            <div className="black-key" onClick={playDb4}><span>O</span></div>
+            <div className="black-key" onClick={playDb5}><span>O</span></div>
             <div className="white-key" onClick={playD5}><span>L</span></div>
           </div>
         </div>
+        <small className='pt-2'>By Nasreen @REKA</small>
       </header>
     </div>
   );

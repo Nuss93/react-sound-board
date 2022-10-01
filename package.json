@@ -1,5 +1,6 @@
 {
   "name": "react-sound-board",
+  "homepage": "https://reka.tech/experiments/react-soundboard",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
