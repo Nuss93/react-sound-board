@@ -1,111 +1,113 @@
 import * as Tone from "tone";
 
-export function playC4() {
+export function playC(octave) {
+    const OCTAVE = "C" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C4", "8n");
+    console.log('now playing', OCTAVE)
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playDb4() {
+export function playDb(octave) {
+    const OCTAVE = "Db" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Db4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playD4() {
+export function playD(octave) {
+    const OCTAVE = "D" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("D4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playEb4() {
+export function playEb(octave) {
+    const OCTAVE = "Eb" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Eb4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playE4() {
+export function playE(octave) {
+    const OCTAVE = "E" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("E4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playF4() {
+export function playF(octave) {
+    const OCTAVE = "F" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("F4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playGb4() {
+export function playGb(octave) {
+    const OCTAVE = "Gb" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Gb4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playG4() {
+export function playG(octave) {
+    const OCTAVE = "G" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("G4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playAb4() {
+export function playAb(octave) {
+    const OCTAVE = "Ab" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Ab4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playA4() {
+export function playA(octave) {
+    const OCTAVE = "A" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("A4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playBb4() {
+export function playBb(octave) {
+    const OCTAVE = "Bb" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Bb4", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
-export function playB4() {
+export function playB(octave) {
+    const OCTAVE = "B" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("B4", "8n");
-}
-export function playC5() {
-    const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("C5", "8n");
-}
-export function playDb5() {
-    const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("Db5", "8n");
-}
-export function playD5() {
-    const synth = new Tone.Synth().toDestination();
-    synth.triggerAttackRelease("D5", "8n");
+    synth.triggerAttackRelease(OCTAVE, "8n");
 }
 
 export function playNote(event) {
-    // console.log(event.keyCode)
-    if (event.keyCode === 65) {
-        playC4();
-    }
-    if (event.keyCode === 87) {
-        playDb4();
-    }
-    if (event.keyCode === 83) {
-        playD4();
-    }
-    if (event.keyCode === 69) {
-        playEb4();
-    }
-    if (event.keyCode === 68) {
-        playE4();
-    }
-    if (event.keyCode === 70) {
-        playF4();
-    }
-    if (event.keyCode === 84) {
-        playGb4();
-    }
-    if (event.keyCode === 71) {
-        playG4();
-    }
-    if (event.keyCode === 89) {
-        playAb4();
-    }
-    if (event.keyCode === 72) {
-        playA4();
-    }
-    if (event.keyCode === 85) {
-        playBb4();
-    }
-    if (event.keyCode === 74) {
-        playB4();
-    }
-    if (event.keyCode === 75) {
-        playC5();
-    }
-    if (event.keyCode === 76) {
-        playD5();
-    }
-    if (event.keyCode === 79) {
-        playDb5();
-    }
+    console.log(event.keyCode)
+    console.log(event)
+    // if (event.keyCode === 65) {
+    //     playC4();
+    // }
+    // if (event.keyCode === 87) {
+    //     playDb4();
+    // }
+    // if (event.keyCode === 83) {
+    //     playD4();
+    // }
+    // if (event.keyCode === 69) {
+    //     playEb4();
+    // }
+    // if (event.keyCode === 68) {
+    //     playE4();
+    // }
+    // if (event.keyCode === 70) {
+    //     playF4();
+    // }
+    // if (event.keyCode === 84) {
+    //     playGb4();
+    // }
+    // if (event.keyCode === 71) {
+    //     playG4();
+    // }
+    // if (event.keyCode === 89) {
+    //     playAb4();
+    // }
+    // if (event.keyCode === 72) {
+    //     playA4();
+    // }
+    // if (event.keyCode === 85) {
+    //     playBb4();
+    // }
+    // if (event.keyCode === 74) {
+    //     playB4();
+    // }
+    // if (event.keyCode === 75) {
+    //     playC5();
+    // }
+    // if (event.keyCode === 76) {
+    //     playD5();
+    // }
+    // if (event.keyCode === 79) {
+    //     playDb5();
+    // }
 }
