@@ -1,3 +1,5 @@
+import * as Tone from "tone";
+
 import logo from './logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -29,7 +31,13 @@ function App() {
       window.removeEventListener("keydown", playNote);
     };
   }, [octave])
-  
+  const playApplause = () => {
+    // const player = new Tone.Player("https://tonejs.github.io/audio/berklee/gurgling_theremin_1.mp3").toDestination();
+    const player = new Tone.Player(require("./applause.mp3")).toDestination();
+    Tone.loaded().then(() => {
+      player.start();
+    });
+  }
   const playNote = (event) => {
     let OCTAVE = octave
 
@@ -102,7 +110,8 @@ function App() {
             </div>
             <button className='button' onClick={() => {setOctave(octave + 1)}}>{">"}</button>
           </div>
-          <button className='mb-2 button' onClick={() => {setOctave(4)}}>Reset</button>
+          <button className='mb-2 me-3 button' onClick={() => {setOctave(4)}}>Reset</button>
+          <button className='mb-2 button' onClick={playApplause}>Applause</button>
 
           <div className="piano">
             <div className="white-key" onClick={() => {playC(octave)}}><span>A</span></div>
@@ -122,7 +131,7 @@ function App() {
             <div className="white-key" onClick={() => {playD(octave + 1)}}><span>L</span></div>
           </div>
         </div>
-        <small className='pt-2'>By Nasreen @REKA</small>
+        <small className='pt-2'>By Nasreen @REKA | V 2</small>
       </header>
     </div>
   );
