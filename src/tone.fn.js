@@ -3,7 +3,7 @@ import * as Tone from "tone";
 export function playC(octave) {
     const OCTAVE = "C" + octave.toString();
     const synth = new Tone.Synth().toDestination();
-    console.log('now playing', OCTAVE)
+    // console.log('now playing', OCTAVE)
     synth.triggerAttackRelease(OCTAVE, "8n");
 }
 export function playDb(octave) {
