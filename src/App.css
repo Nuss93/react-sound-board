@@ -1,11 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;500&display=swap');
-body { font-family: 'Poppins', sans-serif; }
+body { 
+  font-family: 'Poppins', sans-serif; background-color: #282c34; color: white;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+}
 .small, small {
   font-size: .5em;
   font-weight: 100;
 }
 .App {
+  height: 100vh;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .App-logo {
@@ -19,16 +30,6 @@ body { font-family: 'Poppins', sans-serif; }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .App-link {
   color: #61dafb;
@@ -83,7 +84,10 @@ h1 {
   bottom: 0;
   transform: translateY(-30%);
 }
-
+.white-key.active, .black-key.active {
+  /* background-color: rgb(117, 117, 117); */
+  background-color: rgb(255, 213, 134);
+}
 .button {
   background: orange;
   border: none;
@@ -92,4 +96,27 @@ h1 {
 }
 button:hover {
   background: #ca8300;
+}
+@media only screen and (max-width: 700px) {
+  body {
+    transform: rotate(90deg);
+    /* width: 100vh; */
+  }
+  .App-logo {
+    display: none;
+  }
+  .App {
+    /* height: 100vw; */
+  }
+  .white-key {
+    width: 75px;
+    height: 250px;
+  }
+  .black-key {
+    /* display: none; */
+    width: 30px;
+    height: 125px;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
 }
