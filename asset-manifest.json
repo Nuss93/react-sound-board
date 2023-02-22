@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/react-sound-board/static/css/main.3d8d44bd.css",
+    "main.js": "/react-sound-board/static/js/main.673614f4.js",
+    "static/js/787.cf3fcf68.chunk.js": "/react-sound-board/static/js/787.cf3fcf68.chunk.js",
+    "static/media/applause.mp3": "/react-sound-board/static/media/applause.3f16b407f48db1283b68.mp3",
+    "static/media/logo.png": "/react-sound-board/static/media/logo.825d3fa0da1d93847621.png",
+    "index.html": "/react-sound-board/index.html",
+    "main.3d8d44bd.css.map": "/react-sound-board/static/css/main.3d8d44bd.css.map",
+    "main.673614f4.js.map": "/react-sound-board/static/js/main.673614f4.js.map",
+    "787.cf3fcf68.chunk.js.map": "/react-sound-board/static/js/787.cf3fcf68.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3d8d44bd.css",
+    "static/js/main.673614f4.js"
+  ]
+}
